@@ -1,0 +1,2 @@
+# LZGRDB
+基于sql在GRDB的基础上封装一层以及自定义构造SQL语句的buffer
