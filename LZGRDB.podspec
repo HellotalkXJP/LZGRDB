@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LZGRDB"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of LZGRDB."
 
   # This description is used to generate tags and improve search results.
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "GoodjobXJP" => "37888366+HellotalkXJP@users.noreply.github.com" }
+  spec.author             = { "GoodjobXJP" => "923603565@qq.com" }
   # Or just: spec.author    = "GoodjobXJP"
   # spec.authors            = { "GoodjobXJP" => "37888366+HellotalkXJP@users.noreply.github.com" }
   # spec.social_media_url   = "https://twitter.com/GoodjobXJP"
@@ -64,6 +64,7 @@ Pod::Spec.new do |spec|
 
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
+  
   spec.platform     = :ios, "13.0"
   spec.swift_versions = '5'
 
@@ -91,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "LZGRDB", "LZGRDB/LZGRDB/GRDB/*.{swift}"
+  spec.source_files  = "LZGRDB", "LZGRDB/GRDB/*.{swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
