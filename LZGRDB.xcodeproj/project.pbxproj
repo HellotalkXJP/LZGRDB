@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04CAC15724EE289A004505E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15624EE289A004505E8 /* AppDelegate.swift */; };
+		04CAC15924EE289A004505E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15824EE289A004505E8 /* SceneDelegate.swift */; };
+		04CAC15B24EE289A004505E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15A24EE289A004505E8 /* ViewController.swift */; };
+		04CAC15E24EE289A004505E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC15C24EE289A004505E8 /* Main.storyboard */; };
+		04CAC16024EE289C004505E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC15F24EE289C004505E8 /* Assets.xcassets */; };
+		04CAC16324EE289C004505E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC16124EE289C004505E8 /* LaunchScreen.storyboard */; };
+		04CAC16E24EE289D004505E8 /* LZGRDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC16D24EE289D004505E8 /* LZGRDBTests.swift */; };
+		04CAC17924EE289D004505E8 /* LZGRDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC17824EE289D004505E8 /* LZGRDBUITests.swift */; };
+		04CAC19124EE2AB6004505E8 /* DatabaseConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18724EE2AB6004505E8 /* DatabaseConnect.swift */; };
+		04CAC19224EE2AB6004505E8 /* MutableSQLBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18824EE2AB6004505E8 /* MutableSQLBuffer.swift */; };
+		04CAC19324EE2AB6004505E8 /* DataBaseResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18924EE2AB6004505E8 /* DataBaseResultSet.swift */; };
+		04CAC19424EE2AB6004505E8 /* DataMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18A24EE2AB6004505E8 /* DataMessage.swift */; };
+		04CAC19524EE2AB6004505E8 /* GRDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18B24EE2AB6004505E8 /* GRDBManager.swift */; };
+		04CAC19624EE2AB6004505E8 /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18C24EE2AB6004505E8 /* FilePath.swift */; };
+		04CAC19724EE2AB6004505E8 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18D24EE2AB6004505E8 /* DatabaseService.swift */; };
+		04CAC19824EE2AB6004505E8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18E24EE2AB6004505E8 /* Player.swift */; };
+		04CAC19924EE2AB6004505E8 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18F24EE2AB6004505E8 /* Student.swift */; };
+		04CAC19A24EE2AB6004505E8 /* SQLBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC19024EE2AB6004505E8 /* SQLBuffer.swift */; };
+		04CAC19E24EE2ABD004505E8 /* defaultSql.sql in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC19D24EE2ABD004505E8 /* defaultSql.sql */; };
+		04CAC1A224F39A94004505E8 /* DatabaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC1A124F39A94004505E8 /* DatabaseInterface.swift */; };
+		22D17AAC958984E0B5AB98C0 /* Pods_LZGRDB_LZGRDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492386C9FF028B5E86423832 /* Pods_LZGRDB_LZGRDBUITests.framework */; };
+		2A612BCA9F635C0A309D80BF /* Pods_LZGRDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020AE847246D2482CD18186A /* Pods_LZGRDBTests.framework */; };
+		4CF6CC00FEC0408D114BBE47 /* Pods_LZGRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B71EC4BFC0256D8CFD4C7A /* Pods_LZGRDB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04CAC16A24EE289D004505E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CAC14B24EE289A004505E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CAC15224EE289A004505E8;
+			remoteInfo = LZGRDB;
+		};
+		04CAC17524EE289D004505E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CAC14B24EE289A004505E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CAC15224EE289A004505E8;
+			remoteInfo = LZGRDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020AE847246D2482CD18186A /* Pods_LZGRDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZGRDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CAC15324EE289A004505E8 /* LZGRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZGRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CAC15624EE289A004505E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04CAC15824EE289A004505E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04CAC15A24EE289A004505E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04CAC15D24EE289A004505E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04CAC15F24EE289C004505E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CAC16224EE289C004505E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04CAC16424EE289C004505E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CAC16924EE289D004505E8 /* LZGRDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZGRDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CAC16D24EE289D004505E8 /* LZGRDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZGRDBTests.swift; sourceTree = "<group>"; };
+		04CAC16F24EE289D004505E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CAC17424EE289D004505E8 /* LZGRDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZGRDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CAC17824EE289D004505E8 /* LZGRDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZGRDBUITests.swift; sourceTree = "<group>"; };
+		04CAC17A24EE289D004505E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CAC18724EE2AB6004505E8 /* DatabaseConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConnect.swift; sourceTree = "<group>"; };
+		04CAC18824EE2AB6004505E8 /* MutableSQLBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableSQLBuffer.swift; sourceTree = "<group>"; };
+		04CAC18924EE2AB6004505E8 /* DataBaseResultSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseResultSet.swift; sourceTree = "<group>"; };
+		04CAC18A24EE2AB6004505E8 /* DataMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMessage.swift; sourceTree = "<group>"; };
+		04CAC18B24EE2AB6004505E8 /* GRDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRDBManager.swift; sourceTree = "<group>"; };
+		04CAC18C24EE2AB6004505E8 /* FilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
+		04CAC18D24EE2AB6004505E8 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		04CAC18E24EE2AB6004505E8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		04CAC18F24EE2AB6004505E8 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		04CAC19024EE2AB6004505E8 /* SQLBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLBuffer.swift; sourceTree = "<group>"; };
+		04CAC19D24EE2ABD004505E8 /* defaultSql.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = defaultSql.sql; sourceTree = "<group>"; };
+		04CAC1A124F39A94004505E8 /* DatabaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseInterface.swift; sourceTree = "<group>"; };
+		0D5E011CAC1F41890EDE963E /* Pods-LZGRDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZGRDBTests.debug.xcconfig"; path = "Target Support Files/Pods-LZGRDBTests/Pods-LZGRDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		492386C9FF028B5E86423832 /* Pods_LZGRDB_LZGRDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZGRDB_LZGRDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55650FA05418CE0D6A31D2C0 /* Pods-LZGRDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZGRDB.release.xcconfig"; path = "Target Support Files/Pods-LZGRDB/Pods-LZGRDB.release.xcconfig"; sourceTree = "<group>"; };
+		767B1854FB6B964543A46A1A /* Pods-LZGRDB-LZGRDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZGRDB-LZGRDBUITests.debug.xcconfig"; path = "Target Support Files/Pods-LZGRDB-LZGRDBUITests/Pods-LZGRDB-LZGRDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F65CFDCAB61899D3B3081C3 /* Pods-LZGRDB-LZGRDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZGRDB-LZGRDBUITests.release.xcconfig"; path = "Target Support Files/Pods-LZGRDB-LZGRDBUITests/Pods-LZGRDB-LZGRDBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2B71EC4BFC0256D8CFD4C7A /* Pods_LZGRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZGRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0810C075F6A1EBC4D8E9F9 /* Pods-LZGRDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZGRDBTests.release.xcconfig"; path = "Target Support Files/Pods-LZGRDBTests/Pods-LZGRDBTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBD15F83391FB602812EEB06 /* Pods-LZGRDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZGRDB.debug.xcconfig"; path = "Target Support Files/Pods-LZGRDB/Pods-LZGRDB.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CAC15024EE289A004505E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF6CC00FEC0408D114BBE47 /* Pods_LZGRDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CAC16624EE289D004505E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A612BCA9F635C0A309D80BF /* Pods_LZGRDBTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CAC17124EE289D004505E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D17AAC958984E0B5AB98C0 /* Pods_LZGRDB_LZGRDBUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04CAC14A24EE289A004505E8 = {
+			isa = PBXGroup;
+			children = (
+				04CAC15524EE289A004505E8 /* LZGRDB */,
+				04CAC16C24EE289D004505E8 /* LZGRDBTests */,
+				04CAC17724EE289D004505E8 /* LZGRDBUITests */,
+				04CAC15424EE289A004505E8 /* Products */,
+				8F127A50B4204730A935099D /* Pods */,
+				11BEB818EE8F23398D555552 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04CAC15424EE289A004505E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC15324EE289A004505E8 /* LZGRDB.app */,
+				04CAC16924EE289D004505E8 /* LZGRDBTests.xctest */,
+				04CAC17424EE289D004505E8 /* LZGRDBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CAC15524EE289A004505E8 /* LZGRDB */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC1A024EE2D3E004505E8 /* Tool */,
+				04CAC19F24EE2CEE004505E8 /* Entity */,
+				04CAC19B24EE2ABD004505E8 /* Resources */,
+				04CAC18624EE2AB6004505E8 /* GRDB */,
+				04CAC15624EE289A004505E8 /* AppDelegate.swift */,
+				04CAC15824EE289A004505E8 /* SceneDelegate.swift */,
+				04CAC15A24EE289A004505E8 /* ViewController.swift */,
+				04CAC15C24EE289A004505E8 /* Main.storyboard */,
+				04CAC15F24EE289C004505E8 /* Assets.xcassets */,
+				04CAC16124EE289C004505E8 /* LaunchScreen.storyboard */,
+				04CAC16424EE289C004505E8 /* Info.plist */,
+			);
+			path = LZGRDB;
+			sourceTree = "<group>";
+		};
+		04CAC16C24EE289D004505E8 /* LZGRDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC16D24EE289D004505E8 /* LZGRDBTests.swift */,
+				04CAC16F24EE289D004505E8 /* Info.plist */,
+			);
+			path = LZGRDBTests;
+			sourceTree = "<group>";
+		};
+		04CAC17724EE289D004505E8 /* LZGRDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC17824EE289D004505E8 /* LZGRDBUITests.swift */,
+				04CAC17A24EE289D004505E8 /* Info.plist */,
+			);
+			path = LZGRDBUITests;
+			sourceTree = "<group>";
+		};
+		04CAC18624EE2AB6004505E8 /* GRDB */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC1A124F39A94004505E8 /* DatabaseInterface.swift */,
+				04CAC18B24EE2AB6004505E8 /* GRDBManager.swift */,
+				04CAC18D24EE2AB6004505E8 /* DatabaseService.swift */,
+				04CAC18724EE2AB6004505E8 /* DatabaseConnect.swift */,
+				04CAC18924EE2AB6004505E8 /* DataBaseResultSet.swift */,
+				04CAC18A24EE2AB6004505E8 /* DataMessage.swift */,
+				04CAC19024EE2AB6004505E8 /* SQLBuffer.swift */,
+				04CAC18824EE2AB6004505E8 /* MutableSQLBuffer.swift */,
+			);
+			path = GRDB;
+			sourceTree = "<group>";
+		};
+		04CAC19B24EE2ABD004505E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC19C24EE2ABD004505E8 /* SQL */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04CAC19C24EE2ABD004505E8 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC19D24EE2ABD004505E8 /* defaultSql.sql */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		04CAC19F24EE2CEE004505E8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC18E24EE2AB6004505E8 /* Player.swift */,
+				04CAC18F24EE2AB6004505E8 /* Student.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		04CAC1A024EE2D3E004505E8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC18C24EE2AB6004505E8 /* FilePath.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		11BEB818EE8F23398D555552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2B71EC4BFC0256D8CFD4C7A /* Pods_LZGRDB.framework */,
+				492386C9FF028B5E86423832 /* Pods_LZGRDB_LZGRDBUITests.framework */,
+				020AE847246D2482CD18186A /* Pods_LZGRDBTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F127A50B4204730A935099D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBD15F83391FB602812EEB06 /* Pods-LZGRDB.debug.xcconfig */,
+				55650FA05418CE0D6A31D2C0 /* Pods-LZGRDB.release.xcconfig */,
+				767B1854FB6B964543A46A1A /* Pods-LZGRDB-LZGRDBUITests.debug.xcconfig */,
+				9F65CFDCAB61899D3B3081C3 /* Pods-LZGRDB-LZGRDBUITests.release.xcconfig */,
+				0D5E011CAC1F41890EDE963E /* Pods-LZGRDBTests.debug.xcconfig */,
+				CA0810C075F6A1EBC4D8E9F9 /* Pods-LZGRDBTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CAC15224EE289A004505E8 /* LZGRDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CAC17D24EE289D004505E8 /* Build configuration list for PBXNativeTarget "LZGRDB" */;
+			buildPhases = (
+				28D4FA81819AA768C58FEEFB /* [CP] Check Pods Manifest.lock */,
+				04CAC14F24EE289A004505E8 /* Sources */,
+				04CAC15024EE289A004505E8 /* Frameworks */,
+				04CAC15124EE289A004505E8 /* Resources */,
+				1F13B02293DED4CFE0D9A9D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZGRDB;
+			productName = LZGRDB;
+			productReference = 04CAC15324EE289A004505E8 /* LZGRDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04CAC16824EE289D004505E8 /* LZGRDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CAC18024EE289D004505E8 /* Build configuration list for PBXNativeTarget "LZGRDBTests" */;
+			buildPhases = (
+				E5DF304AB9A9439DF4655313 /* [CP] Check Pods Manifest.lock */,
+				04CAC16524EE289D004505E8 /* Sources */,
+				04CAC16624EE289D004505E8 /* Frameworks */,
+				04CAC16724EE289D004505E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CAC16B24EE289D004505E8 /* PBXTargetDependency */,
+			);
+			name = LZGRDBTests;
+			productName = LZGRDBTests;
+			productReference = 04CAC16924EE289D004505E8 /* LZGRDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04CAC17324EE289D004505E8 /* LZGRDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CAC18324EE289D004505E8 /* Build configuration list for PBXNativeTarget "LZGRDBUITests" */;
+			buildPhases = (
+				5F987CE3A8B65C94A7657B11 /* [CP] Check Pods Manifest.lock */,
+				04CAC17024EE289D004505E8 /* Sources */,
+				04CAC17124EE289D004505E8 /* Frameworks */,
+				04CAC17224EE289D004505E8 /* Resources */,
+				B4568B304BFFBF1FE42E7179 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CAC17624EE289D004505E8 /* PBXTargetDependency */,
+			);
+			name = LZGRDBUITests;
+			productName = LZGRDBUITests;
+			productReference = 04CAC17424EE289D004505E8 /* LZGRDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CAC14B24EE289A004505E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04CAC15224EE289A004505E8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					04CAC16824EE289D004505E8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 04CAC15224EE289A004505E8;
+					};
+					04CAC17324EE289D004505E8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 04CAC15224EE289A004505E8;
+					};
+				};
+			};
+			buildConfigurationList = 04CAC14E24EE289A004505E8 /* Build configuration list for PBXProject "LZGRDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CAC14A24EE289A004505E8;
+			productRefGroup = 04CAC15424EE289A004505E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CAC15224EE289A004505E8 /* LZGRDB */,
+				04CAC16824EE289D004505E8 /* LZGRDBTests */,
+				04CAC17324EE289D004505E8 /* LZGRDBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CAC15124EE289A004505E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CAC16324EE289C004505E8 /* LaunchScreen.storyboard in Resources */,
+				04CAC19E24EE2ABD004505E8 /* defaultSql.sql in Resources */,
+				04CAC16024EE289C004505E8 /* Assets.xcassets in Resources */,
+				04CAC15E24EE289A004505E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CAC16724EE289D004505E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CAC17224EE289D004505E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F13B02293DED4CFE0D9A9D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZGRDB/Pods-LZGRDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZGRDB/Pods-LZGRDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LZGRDB/Pods-LZGRDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28D4FA81819AA768C58FEEFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZGRDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F987CE3A8B65C94A7657B11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZGRDB-LZGRDBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4568B304BFFBF1FE42E7179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZGRDB-LZGRDBUITests/Pods-LZGRDB-LZGRDBUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZGRDB-LZGRDBUITests/Pods-LZGRDB-LZGRDBUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LZGRDB-LZGRDBUITests/Pods-LZGRDB-LZGRDBUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5DF304AB9A9439DF4655313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZGRDBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CAC14F24EE289A004505E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CAC19A24EE2AB6004505E8 /* SQLBuffer.swift in Sources */,
+				04CAC19824EE2AB6004505E8 /* Player.swift in Sources */,
+				04CAC19324EE2AB6004505E8 /* DataBaseResultSet.swift in Sources */,
+				04CAC19224EE2AB6004505E8 /* MutableSQLBuffer.swift in Sources */,
+				04CAC15B24EE289A004505E8 /* ViewController.swift in Sources */,
+				04CAC15724EE289A004505E8 /* AppDelegate.swift in Sources */,
+				04CAC15924EE289A004505E8 /* SceneDelegate.swift in Sources */,
+				04CAC19124EE2AB6004505E8 /* DatabaseConnect.swift in Sources */,
+				04CAC19924EE2AB6004505E8 /* Student.swift in Sources */,
+				04CAC19724EE2AB6004505E8 /* DatabaseService.swift in Sources */,
+				04CAC19524EE2AB6004505E8 /* GRDBManager.swift in Sources */,
+				04CAC19424EE2AB6004505E8 /* DataMessage.swift in Sources */,
+				04CAC1A224F39A94004505E8 /* DatabaseInterface.swift in Sources */,
+				04CAC19624EE2AB6004505E8 /* FilePath.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CAC16524EE289D004505E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CAC16E24EE289D004505E8 /* LZGRDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CAC17024EE289D004505E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CAC17924EE289D004505E8 /* LZGRDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04CAC16B24EE289D004505E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CAC15224EE289A004505E8 /* LZGRDB */;
+			targetProxy = 04CAC16A24EE289D004505E8 /* PBXContainerItemProxy */;
+		};
+		04CAC17624EE289D004505E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CAC15224EE289A004505E8 /* LZGRDB */;
+			targetProxy = 04CAC17524EE289D004505E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04CAC15C24EE289A004505E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CAC15D24EE289A004505E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04CAC16124EE289C004505E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CAC16224EE289C004505E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04CAC17B24EE289D004505E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04CAC17C24EE289D004505E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CAC17E24EE289D004505E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD15F83391FB602812EEB06 /* Pods-LZGRDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF5JMTT72W;
+				INFOPLIST_FILE = LZGRDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LZGRDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04CAC17F24EE289D004505E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55650FA05418CE0D6A31D2C0 /* Pods-LZGRDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF5JMTT72W;
+				INFOPLIST_FILE = LZGRDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LZGRDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04CAC18124EE289D004505E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5E011CAC1F41890EDE963E /* Pods-LZGRDBTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF5JMTT72W;
+				INFOPLIST_FILE = LZGRDBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LZGRDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZGRDB.app/LZGRDB";
+			};
+			name = Debug;
+		};
+		04CAC18224EE289D004505E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0810C075F6A1EBC4D8E9F9 /* Pods-LZGRDBTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF5JMTT72W;
+				INFOPLIST_FILE = LZGRDBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LZGRDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZGRDB.app/LZGRDB";
+			};
+			name = Release;
+		};
+		04CAC18424EE289D004505E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767B1854FB6B964543A46A1A /* Pods-LZGRDB-LZGRDBUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF5JMTT72W;
+				INFOPLIST_FILE = LZGRDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LZGRDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LZGRDB;
+			};
+			name = Debug;
+		};
+		04CAC18524EE289D004505E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F65CFDCAB61899D3B3081C3 /* Pods-LZGRDB-LZGRDBUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF5JMTT72W;
+				INFOPLIST_FILE = LZGRDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LZGRDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LZGRDB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CAC14E24EE289A004505E8 /* Build configuration list for PBXProject "LZGRDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CAC17B24EE289D004505E8 /* Debug */,
+				04CAC17C24EE289D004505E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CAC17D24EE289D004505E8 /* Build configuration list for PBXNativeTarget "LZGRDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CAC17E24EE289D004505E8 /* Debug */,
+				04CAC17F24EE289D004505E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CAC18024EE289D004505E8 /* Build configuration list for PBXNativeTarget "LZGRDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CAC18124EE289D004505E8 /* Debug */,
+				04CAC18224EE289D004505E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CAC18324EE289D004505E8 /* Build configuration list for PBXNativeTarget "LZGRDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CAC18424EE289D004505E8 /* Debug */,
+				04CAC18524EE289D004505E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CAC14B24EE289A004505E8 /* Project object */;
+}

@@ -1,0 +1,18 @@
+PODS:
+  - GRDB.swift (4.14.0):
+    - GRDB.swift/standard (= 4.14.0)
+  - GRDB.swift/standard (4.14.0)
+
+DEPENDENCIES:
+  - GRDB.swift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GRDB.swift
+
+SPEC CHECKSUMS:
+  GRDB.swift: 8cc3ab7c8b8b4ac1761deb8dca4b51c1c9d429f8
+
+PODFILE CHECKSUM: 2dfc31e7b026fc88238881145290052751243af8
+
+COCOAPODS: 1.9.1
