@@ -20,7 +20,6 @@
 		04CAC19324EE2AB6004505E8 /* DataBaseResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18924EE2AB6004505E8 /* DataBaseResultSet.swift */; };
 		04CAC19424EE2AB6004505E8 /* DataMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18A24EE2AB6004505E8 /* DataMessage.swift */; };
 		04CAC19524EE2AB6004505E8 /* GRDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18B24EE2AB6004505E8 /* GRDBManager.swift */; };
-		04CAC19624EE2AB6004505E8 /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18C24EE2AB6004505E8 /* FilePath.swift */; };
 		04CAC19724EE2AB6004505E8 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18D24EE2AB6004505E8 /* DatabaseService.swift */; };
 		04CAC19824EE2AB6004505E8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18E24EE2AB6004505E8 /* Player.swift */; };
 		04CAC19924EE2AB6004505E8 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC18F24EE2AB6004505E8 /* Student.swift */; };
@@ -70,7 +69,6 @@
 		04CAC18924EE2AB6004505E8 /* DataBaseResultSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseResultSet.swift; sourceTree = "<group>"; };
 		04CAC18A24EE2AB6004505E8 /* DataMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMessage.swift; sourceTree = "<group>"; };
 		04CAC18B24EE2AB6004505E8 /* GRDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRDBManager.swift; sourceTree = "<group>"; };
-		04CAC18C24EE2AB6004505E8 /* FilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
 		04CAC18D24EE2AB6004505E8 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		04CAC18E24EE2AB6004505E8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		04CAC18F24EE2AB6004505E8 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 		04CAC1A024EE2D3E004505E8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				04CAC18C24EE2AB6004505E8 /* FilePath.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -497,7 +494,6 @@
 				04CAC19524EE2AB6004505E8 /* GRDBManager.swift in Sources */,
 				04CAC19424EE2AB6004505E8 /* DataMessage.swift in Sources */,
 				04CAC1A224F39A94004505E8 /* DatabaseInterface.swift in Sources */,
-				04CAC19624EE2AB6004505E8 /* FilePath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

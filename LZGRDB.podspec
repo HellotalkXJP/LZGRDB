@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LZGRDB"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.1"
   spec.summary      = "A short description of LZGRDB."
 
   # This description is used to generate tags and improve search results.
@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "LZGRDB", "LZGRDB/GRDB/*.{swift}"
-  # spec.exclude_files = "Classes/Exclude"
+  # spec.exclude_files = "LZGRDB/GRDB/FilePath.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
 
