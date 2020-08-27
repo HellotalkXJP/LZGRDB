@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
   
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "9.0"
   spec.swift_versions = '5'
 
   #  When using multiple platforms
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "LZGRDB", "LZGRDB/GRDB/*.{swift}"
+  spec.source_files  = "LZGRDB/GRDB/*.{swift}"
   # spec.exclude_files = "LZGRDB/GRDB/FilePath.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
