@@ -8,25 +8,25 @@
 
 import Foundation
 
-class DatabaseInterface: NSObject {
-    static let sharedInterface = DatabaseInterface()
+public class DatabaseInterface: NSObject {
+    public static let sharedInterface = DatabaseInterface()
     
     var dbName: String = "default.sqlite"
     var dbPath: String = NSHomeDirectory() + "/Documents/"
     
-    var interfaceDelegate: DatabaseInterfaceDelegate?
+    public var interfaceDelegate: DatabaseInterfaceDelegate?
     
-    override init() {
+    public override init() {
         super.init()
     }
     
     // 设置数据库路径以及数据库名字
-    func setDatabase(dbName: String = "default.sqlite", dbPath: String = NSHomeDirectory() + "/Documents/") {
+    public func setDatabase(dbName: String = "default.sqlite", dbPath: String = NSHomeDirectory() + "/Documents/") {
         self.dbName = dbName
         self.dbPath = dbPath
     }
     
-    func executeDataMessage(_ message: inout DataMessage) {
+    public func executeDataMessage(_ message: inout DataMessage) {
         manager.executeDataMessage(&message)
     }
     
@@ -36,14 +36,14 @@ class DatabaseInterface: NSObject {
 }
 
 extension DatabaseInterface: DatabaseInterfaceDelegate {
-    func executeFinishWithDataMessage(_ message: DataMessage) {
+    public func executeFinishWithDataMessage(_ message: DataMessage) {
         if interfaceDelegate != nil {
             interfaceDelegate?.executeFinishWithDataMessage(message)
         }
     }
 }
 
-protocol DatabaseInterfaceDelegate {
+public protocol DatabaseInterfaceDelegate {
     func executeFinishWithDataMessage(_ message: DataMessage)
 }
 

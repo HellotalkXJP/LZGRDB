@@ -8,13 +8,13 @@
 
 import Foundation
 
-enum DatabaseConnectType {
+public enum DatabaseConnectType {
     case normal     // 正常读取连接
     case low        // 低优先级的读写连接，队列的优先级都是low
     case high       // 高优先级的读写连接，队列的优先级都是high
 }
 
-enum DatabaseOperationType {
+public enum DatabaseOperationType {
     case insert
     case delete
     case update
@@ -22,7 +22,7 @@ enum DatabaseOperationType {
     case batchQuery   // 批量查询
 }
 
-enum DatabaseLogicType {
+public enum DatabaseLogicType {
     case null
     case insertUser
     case updateUser
@@ -30,38 +30,38 @@ enum DatabaseLogicType {
     case queryUser
 }
 
-class DataMessage: NSObject {
+public class DataMessage: NSObject {
     // 是否已经返回数据库执行结果
-    var responded = false
+    public var responded = false
     
     // 是否是同步
-    var sync = false
+    public var sync = false
     
     // 数据库操作sql语句
-    var sqlBuffer: SQLBuffer?
+    public var sqlBuffer: SQLBuffer?
     
     // 数据库批量操作sql语句
-    var mutableSqlBuffer: MutableSQLBuffer?
+    public var mutableSqlBuffer: MutableSQLBuffer?
     
     // 业务逻辑类型
-    var logicType: DatabaseLogicType = .null
+    public var logicType: DatabaseLogicType = .null
     
     // 数据库操作类型
-    var operationType: DatabaseOperationType = .query
+    public var operationType: DatabaseOperationType = .query
     
     // 数据库连接类型
-    var databaseConnectType: DatabaseConnectType = .normal
+    public var databaseConnectType: DatabaseConnectType = .normal
     
     // 数据库操作结果
-    var resultSet: DataBaseResultSet?
+    public var resultSet: DataBaseResultSet?
     
     // 消息唯一标识
-    var identifier: String = ""
+    public var identifier: String = ""
     
     // 是否批量操作
     private var batch = false
     
-    init(withSQLBuffer sqlBuffer: SQLBuffer) {
+    public init(withSQLBuffer sqlBuffer: SQLBuffer) {
         self.sqlBuffer = sqlBuffer
         
         if sqlBuffer.sql.hasPrefix("INSERT") {
@@ -79,7 +79,7 @@ class DataMessage: NSObject {
         super.init()
     }
     
-    init(withMutalbeSQLBuffer mutableSQLBuffer: MutableSQLBuffer) {
+    public init(withMutalbeSQLBuffer mutableSQLBuffer: MutableSQLBuffer) {
         self.mutableSqlBuffer = mutableSQLBuffer
         self.batch = true
         if let sqlBuffer = mutableSQLBuffer.batchSqlBuffers.last {

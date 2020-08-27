@@ -9,20 +9,20 @@
 import Foundation
 import GRDB
 
-typealias SQLBufferBlockV = () -> SQLBuffer
-typealias SQLBufferBlockS = (_ string: String) -> SQLBuffer
-typealias SQLBufferBlockSS = (_ string1: String, _ string2: String) -> SQLBuffer
-typealias SQLBufferBlockU = (_ value: UInt) -> SQLBuffer
-typealias SQLBufferBlockKV = (_ key: String, _ value: DatabaseValueConvertible) -> SQLBuffer
+public typealias SQLBufferBlockV = () -> SQLBuffer
+public typealias SQLBufferBlockS = (_ string: String) -> SQLBuffer
+public typealias SQLBufferBlockSS = (_ string1: String, _ string2: String) -> SQLBuffer
+public typealias SQLBufferBlockU = (_ value: UInt) -> SQLBuffer
+public typealias SQLBufferBlockKV = (_ key: String, _ value: DatabaseValueConvertible) -> SQLBuffer
 
 // 多参数
-typealias SQLBufferBlockVaList = (_ params: String...) -> SQLBuffer
+public typealias SQLBufferBlockVaList = (_ params: String...) -> SQLBuffer
 
 /// sql语句构造类
-class SQLBuffer: NSObject {
+public class SQLBuffer: NSObject {
     // 使用参数化（避免构造sql语句时，某些特殊字符导致sql语句异常，执行sql失败）
-    var useArguments = false
-    var distinct = false
+    public var useArguments = false
+    public var distinct = false
     
     private var insert: String?
     private var delete: String?
@@ -43,7 +43,7 @@ class SQLBuffer: NSObject {
     private var offset: UInt?
     
     // MARK: readonly，暴露给外部使用
-    var sql: String {
+    public var sql: String {
         if sqlString.count > 0 {
             return sqlString
         }
@@ -61,7 +61,7 @@ class SQLBuffer: NSObject {
         }
     }
     
-    var sql2: String {
+    public var sql2: String {
         if sqlBindingString.count > 0 {
             return sqlBindingString
         }
@@ -77,12 +77,12 @@ class SQLBuffer: NSObject {
         }
     }
     
-    var parameterDictionary: Dictionary<String, DatabaseValueConvertible?> {
+    public var parameterDictionary: Dictionary<String, DatabaseValueConvertible?> {
         let dict = set2
         return dict
     }
     
-    var INSERT: SQLBufferBlockS {
+    public var INSERT: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.insert = string.uppercased()
             return self
@@ -90,7 +90,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var DELETE: SQLBufferBlockS {
+    public var DELETE: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.delete = string.uppercased()
             return self
@@ -98,7 +98,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var UPDATE: SQLBufferBlockS {
+    public var UPDATE: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.update = string.uppercased()
             return self
@@ -106,7 +106,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var REPLACE: SQLBufferBlockS {
+    public var REPLACE: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.replace = string.uppercased()
             return self
@@ -114,7 +114,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var SELECT: SQLBufferBlockS {
+    public var SELECT: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.select.append(string)
             return self
@@ -122,7 +122,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var SELECT_S: SQLBufferBlockVaList {
+    public var SELECT_S: SQLBufferBlockVaList {
         let block = { (_ params: String...) -> SQLBuffer in
             var array = [String]()
 
@@ -136,7 +136,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var FROM: SQLBufferBlockS {
+    public var FROM: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.from.append(string)
             return self
@@ -144,7 +144,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var FROM_S: SQLBufferBlockVaList {
+    public var FROM_S: SQLBufferBlockVaList {
         let block = { (_ params: String...) -> SQLBuffer in
             var array = [String]()
 
@@ -158,7 +158,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var WHERE: SQLBufferBlockS {
+    public var WHERE: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             if self.whereStr.count > 0 {
                 self.whereStr.append(" AND \(string)")
@@ -171,7 +171,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var AND: SQLBufferBlockS {
+    public var AND: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             if self.whereStr.count > 0 {
                 self.whereStr.append(" AND \(string)")
@@ -184,7 +184,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var OR: SQLBufferBlockS {
+    public var OR: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             if self.whereStr.count > 0 {
                 self.whereStr.append(" OR \(string)")
@@ -197,7 +197,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var SET: SQLBufferBlockKV {
+    public var SET: SQLBufferBlockKV {
         let block = { (_ key: String, _ value: DatabaseValueConvertible) -> SQLBuffer in
             let storage = value.databaseValue.storage
                 
@@ -222,7 +222,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var GROUPBY: SQLBufferBlockS {
+    public var GROUPBY: SQLBufferBlockS {
         let block = { (_ string: String) -> SQLBuffer in
             self.groupby.append(string)
             return self
@@ -230,7 +230,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var ORDERBY: SQLBufferBlockSS {
+    public var ORDERBY: SQLBufferBlockSS {
         let block = { (_ string1: String, _ string2: String) -> SQLBuffer in
             self.orderby.append(String(format: "%@ %@", string1, string2))
             return self
@@ -239,7 +239,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var LIMIT: SQLBufferBlockU {
+    public var LIMIT: SQLBufferBlockU {
         let block = { (_ value: UInt) -> SQLBuffer in
             self.limit = value
             return self
@@ -247,7 +247,7 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    var OFFSET: SQLBufferBlockU {
+    public var OFFSET: SQLBufferBlockU {
         let block = { (_ value: UInt) -> SQLBuffer in
             self.offset = value
             return self
@@ -255,12 +255,12 @@ class SQLBuffer: NSObject {
         return block
     }
     
-    override init() {
+    public override init() {
         sqlString = ""
         super.init()
     }
     
-    convenience init(sql: String) {
+    public convenience init(sql: String) {
         self.init()
         sqlString = sql
     }
@@ -494,7 +494,7 @@ class SQLBuffer: NSObject {
         return sql
     }
     
-    override var description: String {
+    public override var description: String {
         if useArguments {
             return sql2
         } else {
@@ -504,19 +504,19 @@ class SQLBuffer: NSObject {
 }
 
 extension SQLBuffer {
-    func SQLFieldEqual(_ field1: String, _ value: Any) -> String {
+    public func SQLFieldEqual(_ field1: String, _ value: Any) -> String {
         return "\(field1)=\(value)"
     }
 
-    func SQLStringEqual(_ field: String, _ value: String) -> String {
+    public func SQLStringEqual(_ field: String, _ value: String) -> String {
         return "\(field)='\(value)'"
     }
 
-    func SQLFieldNotEqual(_ field: String, _ value: Any) -> String {
+    public func SQLFieldNotEqual(_ field: String, _ value: Any) -> String {
         return "\(field)!=\(value)"
     }
 
-    func SQLNumberEqual(_ field: String, _ value: Any) -> String {
+    public func SQLNumberEqual(_ field: String, _ value: Any) -> String {
         return "\(field)=\(value)"
     }
 }

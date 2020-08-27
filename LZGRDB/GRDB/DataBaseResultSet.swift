@@ -9,13 +9,13 @@
 import Foundation
 
 /// 数据库操作结果
-enum DatabaseResult {
+public enum DatabaseResult {
     case failed
     case success
     case constraint
 }
 
-class DataBaseResultSet: NSObject {
-    var resultArray: [Any]?
-    var resultCode: DatabaseResult = .failed
+public class DataBaseResultSet: NSObject {
+    public var resultArray: [Any]?
+    public var resultCode: DatabaseResult = .failed
 }

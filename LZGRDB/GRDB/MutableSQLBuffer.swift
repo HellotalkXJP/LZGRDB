@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MutableSQLBuffer: NSObject {
+public class MutableSQLBuffer: NSObject {
     
     var sqlBuffers = [SQLBuffer]()
     
@@ -35,11 +35,11 @@ class MutableSQLBuffer: NSObject {
     
     let lock = NSLock()
     
-    override init() {
+    public override init() {
         super.init()
     }
     
-    func addBuffer(_ sqlBuffer: SQLBuffer) {
+    public func addBuffer(_ sqlBuffer: SQLBuffer) {
         lock.lock()
         sqlBuffers.append(sqlBuffer)
         lock.unlock()
