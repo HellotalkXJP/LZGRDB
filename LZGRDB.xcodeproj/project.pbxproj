@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04CAC15724EE289A004505E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15624EE289A004505E8 /* AppDelegate.swift */; };
-		04CAC15924EE289A004505E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15824EE289A004505E8 /* SceneDelegate.swift */; };
 		04CAC15B24EE289A004505E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC15A24EE289A004505E8 /* ViewController.swift */; };
 		04CAC15E24EE289A004505E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC15C24EE289A004505E8 /* Main.storyboard */; };
 		04CAC16024EE289C004505E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC15F24EE289C004505E8 /* Assets.xcassets */; };
@@ -52,7 +51,6 @@
 		020AE847246D2482CD18186A /* Pods_LZGRDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZGRDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAC15324EE289A004505E8 /* LZGRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZGRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAC15624EE289A004505E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04CAC15824EE289A004505E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04CAC15A24EE289A004505E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04CAC15D24EE289A004505E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CAC15F24EE289C004505E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				04CAC19B24EE2ABD004505E8 /* Resources */,
 				04CAC18624EE2AB6004505E8 /* GRDB */,
 				04CAC15624EE289A004505E8 /* AppDelegate.swift */,
-				04CAC15824EE289A004505E8 /* SceneDelegate.swift */,
 				04CAC15A24EE289A004505E8 /* ViewController.swift */,
 				04CAC15C24EE289A004505E8 /* Main.storyboard */,
 				04CAC15F24EE289C004505E8 /* Assets.xcassets */,
@@ -487,7 +484,6 @@
 				04CAC19224EE2AB6004505E8 /* MutableSQLBuffer.swift in Sources */,
 				04CAC15B24EE289A004505E8 /* ViewController.swift in Sources */,
 				04CAC15724EE289A004505E8 /* AppDelegate.swift in Sources */,
-				04CAC15924EE289A004505E8 /* SceneDelegate.swift in Sources */,
 				04CAC19124EE2AB6004505E8 /* DatabaseConnect.swift in Sources */,
 				04CAC19924EE2AB6004505E8 /* Student.swift in Sources */,
 				04CAC19724EE2AB6004505E8 /* DatabaseService.swift in Sources */,
@@ -670,7 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JF5JMTT72W;
 				INFOPLIST_FILE = LZGRDB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,7 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JF5JMTT72W;
 				INFOPLIST_FILE = LZGRDB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

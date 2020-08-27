@@ -31,3 +31,5 @@ LZGRDB/.DS_Store
 Pods
 *.xcworkspace
 
+LZGRDB.xcodeproj/xcshareddata/
+
