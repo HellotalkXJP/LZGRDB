@@ -128,7 +128,7 @@ private var batch = false
 批量sql初始化方法
 
 #### 使用
-具体使用方法放在了`SceneDelegate.swift`中，大家可以看下。
+具体使用方法放在了`AppDelegate.swift`中，大家可以看下。
 
 #### Thanks
 --- 
