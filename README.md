@@ -4,7 +4,7 @@
 ## 安装LZGRDB
 **Cocoapods**
 ```
-1. 在 Podfile 中添加 `pod 'LZGRDB'`
+1. 在 Podfile 中添加 `pod 'LZGRDB', :git => 'https://github.com/HellotalkXJP/LZGRDB.git'`
 2. 执行 `pod install` 或 `pod update`
 ```
 
